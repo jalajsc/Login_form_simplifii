@@ -8,7 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         
         <div className="input_box">
-        <button classname="button_91">+91</button>
+        <button id="buttoni">+91</button>
         <input type="text" maxLength="10" id="mobile" placeholder="Enter the mobile number"></input>
         </div>
         
@@ -29,17 +29,10 @@ function App() {
             .then(data => console.log(data));
           }}>Continue</div>
 
-
-
-
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          <div class="bottom_line">
+          <p>By continuing you agree to our</p>
+          <p id="TermService">Terms of Servie & Privacy Policies</p> 
+          </div>
 
         <input id="partition" type="text" maxlength="4" />
       </header>
