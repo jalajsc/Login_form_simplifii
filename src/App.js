@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
 
 function App() {
@@ -6,19 +6,17 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <div classname="input_button">
-        <button classname="button_91">+91</div>
+        
+        <div className="input_box">
+        <button classname="button_91">+91</button>
         <input type="text" maxLength="10" id="mobile" placeholder="Enter the mobile number"></input>
         </div>
         
         <div className="continue_button" onClick={()=>{
           let m=document.getElementById("mobile").value;
-          const option = {
+          const options = {
             method: 'POST',
-            header: { 'Content-Type': 'application/json'},
+            header: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
             "token":"717dc2d82d86be210bef206cf512dba9",
               "mobile":{m},
@@ -42,6 +40,8 @@ function App() {
         >
           Learn React
         </a>
+
+        <input id="partition" type="text" maxlength="4" />
       </header>
     </div>
   );
